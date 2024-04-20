@@ -7,15 +7,15 @@ function App() {
   let [counter, setCounter] =  useState(20)
 
   const AddValue = ()=>{
-    console.log("clicked", counter);
      counter = counter + 1
      setCounter(counter)
 
   }
   const removeValue = () => {
-    console.log(counter);
+    
     counter = counter - 1
     setCounter(counter)
+    
   }
 
   return (
