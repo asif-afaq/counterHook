@@ -6,12 +6,11 @@ import './App.css'
 function App() {
 
 
-
   let [counter, setCounter] =  useState(20)
 
 
 
-  const AddValue = ()=>{
+  const AddValue = ()=>{ 
      counter = counter + 1
      setCounter(counter)
      if(counter === 40){
@@ -21,8 +20,7 @@ function App() {
 
 
 
-  const removeValue = () => {
-    
+  const removeValue = () => { 
     counter = counter - 1
     setCounter(counter)
     if(counter < 0){
