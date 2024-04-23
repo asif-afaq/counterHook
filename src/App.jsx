@@ -8,26 +8,21 @@ function App() {
 
   let [counter, setCounter] =  useState(20)
 
-
-
   const AddValue = ()=>{ 
-     counter = counter + 1
-     setCounter(counter)
-     if(counter === 40){
-      setCounter(0)
-     }
+    //  counter = counter + 1
+    //  setCounter(counter)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    console.log(counter)
+   
   }
-
-
 
   const removeValue = () => { 
     counter = counter - 1
     setCounter(counter)
-    if(counter < 0){
-      setCounter(0)
-    }
-  }
-
+  } 
 
   return (
     <>
